@@ -9,7 +9,7 @@ function App() {
   useEffect(()=>{
     async function APICall(){
       console.log("Aman Happy Birthday....");
-      let response = await fetch("https://sevenoct-1.onrender.com");
+      let response = await fetch("https://sevenoct-1.onrender.com/api/products");
       let data = await response.json();
       console.log(data);
       setProduct(data)
